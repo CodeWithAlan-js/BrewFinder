@@ -1,0 +1,43 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: #f4f1de;
+}
+
+@layer components {
+    .principal-background {
+        background-color: #f4f1de ;
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+    .center-item-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-font{
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 3rem;
+    }
+
+    .center-col-item-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .principal-text-color{
+        color: #3d405b;
+    }
+
+    .secondary-text-color{
+        color: #81b29a;
+    }
+}
