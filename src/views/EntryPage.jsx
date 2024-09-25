@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Input } from "@material-tailwind/react";
 import { Button } from "@material-tailwind/react";
 import { MdFastfood } from "react-icons/md";
-import { Link } from "react-router-dom";
 import "animate.css";
 import { useNavigate } from "react-router-dom";
 import UserLocalisation from "../components/UserLocalisation";

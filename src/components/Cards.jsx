@@ -2,9 +2,7 @@ import {
   Card,
   CardHeader,
   CardBody,
-  CardFooter,
   Typography,
-  Button,
   Tooltip,
   IconButton,
 } from "@material-tailwind/react";
@@ -13,8 +11,7 @@ import { SiHomebrew } from "react-icons/si";
 import { FaMapMarkedAlt } from "react-icons/fa";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import { TbWorldWww } from "react-icons/tb";
-import 'animate.css';
-
+import "animate.css";
 
 const Cards = ({ breweries }) => (
   <div className="flex items-center justify-center lg:flex-row flex-wrap ">
@@ -86,16 +83,25 @@ const Cards = ({ breweries }) => (
                 <FaMapMarkedAlt size={20} color="#81b29a" className="mr-2" />
 
                 {brewery.street ? `${brewery.street}` : "Not available"}
-                {brewery.postal_code ? `${brewery.postal_code}` : "Not available"}
+                {brewery.postal_code
+                  ? `${brewery.postal_code}`
+                  : "Not available"}
               </span>
               <span className="flex items-center">
                 <FaPhoneSquareAlt size={20} color="#81b29a" className="mr-2" />
 
                 {brewery.phone ? `${brewery.phone}` : "Not available"}
               </span>
-              <a className="flex items-center" target="_blank" href={brewery.website_url}>
+              <a
+                className="flex items-center"
+                rel="noreferrer"
+                target="_blank"
+                href={brewery.website_url}
+              >
                 <TbWorldWww size={20} color="#81b29a" className="mr-2" />
-                {brewery.website_url ? `${brewery.website_url}` : "Not available"}
+                {brewery.website_url
+                  ? `${brewery.website_url}`
+                  : "Not available"}
               </a>
             </Typography>
             <div className="group mt-8 inline-flex flex-wrap items-center gap-3">
